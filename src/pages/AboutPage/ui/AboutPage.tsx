@@ -11,7 +11,7 @@ export const AboutPage = memo(() => {
 	return (
 		<article className={className('about', {}, [])}>
 			<div className="about__photo">
-				<img className="about__photo__img" src="/photo_about.jpg" alt="foto" />
+				<img className="about__photo__img" src="/pictures/photo_about.jpg" alt="foto" />
 			</div>
 			<div className="about__text">
 				<h1 className="roboto-bold marginbottom3">{data[0].about_name}</h1>

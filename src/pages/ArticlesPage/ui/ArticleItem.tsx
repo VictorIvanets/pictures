@@ -6,7 +6,7 @@ const ArticleItem = (props: IImg) => {
 	return (
 		<div className="articles-item">
 			<div className="articles-item__picbox">
-				{<img className="articles-item__picbox__pic" src={`/bigl_${id}.jpg`} alt="" /> || (
+				{<img className="articles-item__picbox__pic" src={`/pictures/bigl_${id}.jpg`} alt="" /> || (
 					<PreLoader />
 				)}
 			</div>
