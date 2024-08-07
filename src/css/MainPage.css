@@ -1,0 +1,16 @@
+.mainpage {
+  width: calc(100% - 0rem);
+  height: calc(100vh - 5rem);
+  padding: 1rem;
+  display: flex;
+}
+.mainpage__boxcontent {
+  width: 80%;
+  height: 40%;
+}
+.mainpage__header {
+  font-size: calc(var(--index) * 5);
+}
+.mainpage__title {
+  font-size: calc(var(--index) * 2);
+}/*# sourceMappingURL=MainPage.css.map */

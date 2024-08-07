@@ -1,0 +1,64 @@
+@import ./_variables
+
+.app
+    font: 1.6rem
+    width: 100%
+    height: 100vh
+    display: flex
+    justify-content: flex-end
+    flex-wrap: wrap
+    margin: 0
+    position: relative
+    &__content
+        width: 100%
+        height: 93vh
+
+        text-align: center
+        padding: 1rem
+        position: relative
+        transition: all 0.3s
+        // right: 0px
+.flexappcontent
+    width: 84%
+    transition: all 0.3s
+    @media (max-width: 700px) 
+        width: 100%
+        
+
+
+.mainfonbox
+    width: 100%
+    height: 100vh
+    position: absolute
+    overflow: hidden
+
+.mainfon
+    width: 1980px
+    z-index: -1
+
+
+.light
+    background: #a2c8ca
+    color: $colorDark
+    transition: all 0.3s
+    a
+        color: $colorDark
+    .active
+        color: red
+
+.dark
+    background: $colorMain
+    color: $colorLight
+    transition: all 0.3s
+    a
+        color: $colorLight
+    .active
+        color: #194f74
+.ruby
+    background: $COLMAIN
+    color: $COLSECOND
+    transition: all 0.3s
+    a
+        color: $COLSECOND
+    .active
+        color: #e00000

@@ -1,0 +1,32 @@
+.mainpage
+    width: calc( 100%  - 0rem)
+    height: calc( 100vh - 5rem)
+    padding: 1rem
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    &__boxcontent
+        width: 80%
+        height: 40%
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-between
+    
+    &__header
+        color: $colorLight
+        font-size: calc( var(--index) * 7  ) 
+        font-family: "Rowdies", sans-serif, "Robotobold"
+        font-weight: 600
+        font-style: normal
+        line-height: calc( var(--index) * 6  ) 
+        @media (max-width: 430px)
+            font-size: calc( var(--index) * 5  ) 
+
+    &__title
+        font-size: calc( var(--index) * 1.5  ) 
+        color: $colorLight
+    &__links
+        position: relative
+        top: 10rem
