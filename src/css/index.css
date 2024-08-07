@@ -31,7 +31,7 @@ html {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
   font-style: normal;
-  background: rgb(26, 34, 36);
+  background: rgb(34, 34, 34);
 }
 
 * {
@@ -121,7 +121,7 @@ h4 {
 }
 
 a {
-  color: rgb(66, 88, 102);
+  color: rgb(148, 154, 156);
   text-decoration: none;
   font-size: 1.5rem;
 }
@@ -199,7 +199,7 @@ html {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
   font-style: normal;
-  background: rgb(26, 34, 36);
+  background: rgb(34, 34, 34);
 }
 
 * {
@@ -289,7 +289,7 @@ h4 {
 }
 
 a {
-  color: rgb(66, 88, 102);
+  color: rgb(148, 154, 156);
   text-decoration: none;
   font-size: 1.5rem;
 }
@@ -388,7 +388,7 @@ button {
 }
 
 .dark {
-  background: rgb(26, 34, 36);
+  background: rgb(34, 34, 34);
   color: rgb(201, 201, 201);
   transition: all 0.3s;
 }
@@ -532,7 +532,7 @@ button {
   background: none;
   outline: none;
   border: none;
-  color: rgb(66, 88, 102);
+  color: rgb(148, 154, 156);
   font-size: 1.2rem;
 }
 .articles__headerbox {
@@ -626,7 +626,7 @@ html {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
   font-style: normal;
-  background: rgb(26, 34, 36);
+  background: rgb(34, 34, 34);
 }
 
 * {
@@ -716,7 +716,7 @@ h4 {
 }
 
 a {
-  color: rgb(66, 88, 102);
+  color: rgb(148, 154, 156);
   text-decoration: none;
   font-size: 1.5rem;
 }
@@ -813,7 +813,7 @@ button {
   margin: 8px;
   border-radius: 50%;
   border: 15px solid transparent;
-  border-color: rgb(26, 34, 36) transparent rgb(26, 34, 36) transparent;
+  border-color: rgb(34, 34, 34) transparent rgb(34, 34, 34) transparent;
   animation: lds-dual-ring 1.2s linear infinite;
 }
 
@@ -951,7 +951,7 @@ button {
   background: none;
   outline: none;
   border: none;
-  color: rgb(66, 88, 102);
+  color: rgb(148, 154, 156);
   font-size: 1.2rem;
 }
 
@@ -971,8 +971,8 @@ button {
 }
 @media (max-width: 700px) {
   .sidebar {
-    background: rgb(26, 34, 36);
-    border: 2px solid rgb(66, 88, 102);
+    background: rgb(34, 34, 34);
+    border: 2px solid rgb(148, 154, 156);
   }
 }
 .sidebar__linkbox {
@@ -996,7 +996,7 @@ button {
   background: none;
   outline: none;
   border: none;
-  color: rgb(66, 88, 102);
+  color: rgb(148, 154, 156);
   font-size: 1.5rem;
   position: absolute;
   bottom: 1rem;
@@ -1007,8 +1007,8 @@ button {
 }
 @media (max-width: 700px) {
   .sidebar__hiddenbtn {
-    background: rgb(26, 34, 36);
-    border: 2px solid rgb(66, 88, 102);
+    background: rgb(34, 34, 34);
+    border: 2px solid rgb(148, 154, 156);
   }
 }
 .sidebar__hiddenbtn:hover {
