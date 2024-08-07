@@ -2,7 +2,7 @@
 	"name": "pictures",
 	"private": true,
 	"version": "1.0.0",
-	"homepage": "https://VictorIvanets.github.io/pictures",
+	"homepage": "https://github.com/VictorIvanets/PICTURES",
 	"type": "module",
 	"scripts": {
 		"dev": "vite",

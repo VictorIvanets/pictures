@@ -9,9 +9,7 @@ import { ErrorBoundarie } from './app/Providers/Error/ErrorBoundarie'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
 	<React.StrictMode>
-		<BrowserRouter
-		// basename="pic"
-		>
+		<BrowserRouter basename="/pictures">
 			<ErrorBoundary FallbackComponent={ErrorBoundarie}>
 				<LengProvider>
 					<App />
