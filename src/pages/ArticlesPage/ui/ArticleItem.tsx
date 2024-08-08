@@ -1,8 +1,11 @@
+import { useParams } from 'react-router-dom'
 import { IImg } from '../../../shared/leng-lib/picleng'
 import { PreLoader } from '../../../widgets/PreLoader/index'
 
 const ArticleItem = (props: IImg) => {
 	const { id, name, size, year } = props
+	const { section } = useParams()
+	console.log(section)
 	return (
 		<div className="articles-item">
 			<div className="articles-item__picbox">

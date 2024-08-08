@@ -16,6 +16,7 @@ export const Sidebar = (props: { hidden: boolean; setHidden: any }) => {
 		<>
 			<aside
 				onClick={() => setHidden(!hidden)}
+				// onSwiper={() => setHidden(!hidden)}
 				className={className('sidebar', { sidebarhidden: hidden === true ? true : false }, [])}
 			>
 				<div

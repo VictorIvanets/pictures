@@ -10,20 +10,20 @@ export const ArticlesPage = memo(() => {
 	const data = useChangeLeng<IPicleng>(leng, ua, en, fr)
 
 	const [actualPage, setActualPage] = useState(0)
-	const { id } = useParams()
+	const { section } = useParams()
 	// const { search } = useLocation()
 	// const navigate = useNavigate()
 
-	console.log(id)
+	console.log(section)
 
 	useEffect(() => {
-		if (id === 'micro') {
+		if (section === 'micro') {
 			setActualPage(0)
 		}
-		if (id === 'macro') {
+		if (section === 'macro') {
 			setActualPage(1)
 		}
-	}, [id])
+	}, [section])
 
 	return (
 		<article className="articles">
