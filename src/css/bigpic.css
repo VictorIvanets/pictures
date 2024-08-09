@@ -174,79 +174,20 @@ button {
   transform: translate(-50%, -50%);
 }
 
-.app {
-  font: 1.6rem;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  margin: 0;
-  position: relative;
-}
-.app__content {
-  width: 100%;
-  height: 93vh;
-  text-align: center;
+.bigpic {
+  width: calc(100% - 0rem);
+  height: calc(100vh - 5rem);
   padding: 1rem;
   position: relative;
-  transition: all 0.3s;
+  overflow: auto;
 }
-
-.flexappcontent {
-  width: 84%;
-  transition: all 0.3s;
-}
-@media (max-width: 700px) {
-  .flexappcontent {
-    width: 100%;
-  }
-}
-
-.mainfonbox {
-  width: 100%;
-  height: 100vh;
+.bigpic__picbox {
   position: absolute;
-  overflow: hidden;
+  top: 50%;
+  left: 5%;
+  transform: translate(0%, -50%);
+  height: 90%;
 }
-
-.mainfon {
-  width: 1980px;
-  z-index: -1;
-}
-
-.light {
-  background: #a2c8ca;
-  color: rgb(9, 11, 14);
-  transition: all 0.3s;
-}
-.light a {
-  color: rgb(9, 11, 14);
-}
-.light .active {
-  color: red;
-}
-
-.dark {
-  background: rgb(34, 34, 34);
-  color: rgb(201, 201, 201);
-  transition: all 0.3s;
-}
-.dark a {
-  color: rgb(201, 201, 201);
-}
-.dark .active {
-  color: #194f74;
-}
-
-.ruby {
-  background: #811300;
-  color: #F5F0F1;
-  transition: all 0.3s;
-}
-.ruby a {
-  color: #F5F0F1;
-}
-.ruby .active {
-  color: #e00000;
-}/*# sourceMappingURL=app.css.map */
+.bigpic__pic {
+  height: 100%;
+}/*# sourceMappingURL=bigpic.css.map */

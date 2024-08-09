@@ -4,9 +4,12 @@ import { MainPage } from '../../../../pages/MainPage/index'
 import { RouteProps } from 'react-router-dom'
 import { PreLoader } from '../../../../widgets/PreLoader'
 import { NotFound } from '../../../../widgets/not_found'
+import { SwiperPage } from '../../../../pages/Swiper'
+import { BigPic } from '../../../../widgets/bigpic'
 
 export type AppRouterProps = RouteProps & {
 	path: string
+	children?: undefined
 }
 
 export enum AppRoutes {
@@ -14,6 +17,8 @@ export enum AppRoutes {
 	ABOUT = 'about',
 	LOADER = 'load',
 	ART = 'art',
+	SWIPER = 'swiper',
+	BIG = 'big',
 	NOTFOUND = 'notfound',
 }
 
@@ -22,6 +27,8 @@ export const RoutePath: Record<AppRoutes, string> = {
 	[AppRoutes.ABOUT]: '/about',
 	[AppRoutes.LOADER]: '/load',
 	[AppRoutes.ART]: '/art',
+	[AppRoutes.SWIPER]: '/swiper',
+	[AppRoutes.BIG]: '/big',
 	[AppRoutes.NOTFOUND]: '/*',
 }
 
@@ -31,9 +38,12 @@ export const routerConfig: Record<AppRoutes, AppRouterProps> = {
 		element: <MainPage />,
 	},
 	[AppRoutes.ART]: {
-		path: `${RoutePath.art}/:id`,
-		// path: RoutePath.art,
+		path: `${RoutePath.art}/:section`,
 		element: <ArticlesPage />,
+	},
+	[AppRoutes.BIG]: {
+		path: `${RoutePath.big}/:id`,
+		element: <BigPic />,
 	},
 	[AppRoutes.ABOUT]: {
 		path: RoutePath.about,
@@ -42,6 +52,11 @@ export const routerConfig: Record<AppRoutes, AppRouterProps> = {
 	[AppRoutes.LOADER]: {
 		path: RoutePath.load,
 		element: <PreLoader />,
+	},
+
+	[AppRoutes.SWIPER]: {
+		path: `${RoutePath.swiper}/:section`,
+		element: <SwiperPage />,
 	},
 
 	[AppRoutes.NOTFOUND]: {
