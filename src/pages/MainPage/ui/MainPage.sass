@@ -1,6 +1,6 @@
 .mainpage
     width: calc( 100%  - 0rem)
-    height: calc( 100vh - 5rem)
+    height: calc( 100vh - 7rem)
     padding: 1rem
     display: flex
     justify-content: center
@@ -15,14 +15,70 @@
         justify-content: space-between
     
     &__header
-        color: $colorLight
+        background: $colorLight
+        animation: anime 3s linear 0s
+        background-clip: text
+        color: transparent
+        backface-visibility: hidden
         font-size: calc( var(--index) * 7  ) 
         font-family: "Rowdies", sans-serif, "Robotobold"
         font-weight: 600
         font-style: normal
         line-height: calc( var(--index) * 6  ) 
+        transition: All 0.5s
+        @keyframes anime 
+            0%
+                transition: All 0.5s
+                background: #222222
+                opacity: 0
+                background-clip: text
+                color: transparent
+                backface-visibility: hidden
+            20%
+                transition: All 0.5s
+                background: #222222
+                opacity: 0.2
+                background-clip: text
+                color: transparent
+                text-shadow: 0px 0px 200px #ffffff
+                backface-visibility: hidden
+            40%
+                transition: All 0.5s
+                background: #222222
+                opacity: 0.4
+                background-clip: text
+                color: transparent
+                backface-visibility: hidden
+            60%
+                transition: All 0.5s
+                background: #555555
+                opacity: 0.6
+                background-clip: text
+                color: transparent
+                backface-visibility: hidden
+            80%
+                transition: All 0.5s
+                background: #727272
+                background-clip: text
+                opacity: 0.8
+                color: transparent
+                backface-visibility: hidden
+            100%
+                transition: All 0.5s
+                background: $colorLight
+                background-clip: text
+                opacity: 1
+                color: transparent
+                backface-visibility: hidden
+
         @media (max-width: 430px)
             font-size: calc( var(--index) * 5  ) 
+
+
+
+
+
+
 
     &__title
         font-size: calc( var(--index) * 1.5  ) 

@@ -1,6 +1,6 @@
 .sidebar
     width: 20rem
-    height: calc( 100vh - 5rem)
+    height: calc( 100vh - 10rem)
     position: absolute
     top: 5rem
     left: -19rem
@@ -10,6 +10,7 @@
     padding: 0.5rem
     display: flex
     flex-direction: column
+    justify-content: space-between
     z-index: 3
     @media (max-width: 700px)
         background: $colorMain
@@ -27,8 +28,8 @@
         &__link
             text-align: left
             &:hover
-                scale: 105%
-                transition: all 0.3s
+                scale: 103%
+                transition: all 0.2s
     &__hiddenbtn
         background: none
         outline: none

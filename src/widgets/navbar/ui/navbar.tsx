@@ -6,18 +6,18 @@ export const Navbar = () => {
 	const { leng, toggleLeng } = useLeng()
 	console.log(leng)
 
-	const lengFr = 'FR CHANGER LA LANGUE'
-	const lengUa = 'UA ЗМІНИТИ МОВУ'
-	const lengEn = 'EN CHANGE ENG LANGUAGE'
+	const lengFr = 'CHANGER LA LANGUE'
+	const lengUa = 'ЗМІНИТИ МОВУ'
+	const lengEn = 'CHANGE THE LANGUAGE'
 
 	return (
 		<>
 			<nav className={className('navbar', {}, [])}>
-				<div>
-					<button onClick={() => toggleLeng()} className="navbar__lengbtn">
-						{leng === 'fr' ? lengFr : leng === 'ua' ? lengUa : lengEn}
-					</button>
-				</div>
+				<img className="navbar__img" src={`/pictures/${leng}.png`} alt="flag" />
+
+				<button onClick={() => toggleLeng()} className="navbar__lengbtn cyrillicbold">
+					{leng === 'fr' ? lengFr : leng === 'ua' ? lengUa : lengEn}
+				</button>
 			</nav>
 		</>
 	)

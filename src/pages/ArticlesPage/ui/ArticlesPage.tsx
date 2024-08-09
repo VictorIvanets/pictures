@@ -28,10 +28,10 @@ export const ArticlesPage = memo(() => {
 	return (
 		<article className="articles">
 			<div className="articles__text">
-				<NavLink className="sidebar__linkbox__link" to={`/art/${'micro'}`}>
+				<NavLink className="sidebar__linkbox__link cyrillicbold" to={`/art/${'micro'}`}>
 					{data[0].title}
 				</NavLink>
-				<NavLink className="sidebar__linkbox__link" to={`/art/${'macro'}`}>
+				<NavLink className="sidebar__linkbox__link cyrillicbold" to={`/art/${'macro'}`}>
 					{data[1].title}
 				</NavLink>
 			</div>

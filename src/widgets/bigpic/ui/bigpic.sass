@@ -10,8 +10,12 @@
     &__picbox
         position: absolute
         top: 50%
-        left: 5%
-        transform: translate(-0%, -50%)
+        left: 50%
+        transform: translate(-50%, -50%)
         height: 90%
+        @media (max-width: 700px)
+            left: 5%
+            transform: translate(-0%, -50%)
+
     &__pic
         height: 100%
