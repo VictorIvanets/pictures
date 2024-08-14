@@ -25,12 +25,40 @@
             padding: 0
     &__box
         display: flex
+    &__rating
+        padding: 0.3rem 3rem
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: space-evenly
+        &__boxstar
+            width: 22rem
+            height: 2rem
+            display: flex
+            align-items: center
+            justify-content: space-evenly
+        &__star
+            width: 2rem
+            height: 2rem
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)
+            margin-right: 0.7rem
+            padding: 0.5rem
+            background: #6b6b6b
+            cursor: pointer
+            &:hover
+                scale: 110%
+                background: #d3ac00
+                
+            &:active
+                background: red
+                scale: 90%
+   
 
     &__picbox
-        height: 100%
-        width: 100%
+        height: 95%
+        width: 95%
         @media (max-width: 720px)
-            width: 100% 
+            width: 95% 
             height: auto  
     &__pic
         height: 100%
@@ -47,4 +75,5 @@
     @media (max-width: 720px)
         height: none
         align-items: center
-    
+.yellow
+    background: #d3ac00    

@@ -192,6 +192,12 @@ button {
   font-style: normal;
 }
 
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @font-face {
   font-family: "Roboto";
   src: url("./Roboto.ttf") format("truetype");
@@ -384,6 +390,12 @@ button {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 300;
   font-style: normal;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .app {
@@ -831,6 +843,12 @@ button {
   font-style: normal;
 }
 
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .swiperpage {
   width: calc(100% - 0rem);
   height: calc(100vh - 7rem);
@@ -865,13 +883,45 @@ button {
 .swiperpage__box {
   display: flex;
 }
-.swiperpage__picbox {
-  height: 100%;
+.swiperpage__rating {
+  padding: 0.3rem 3rem;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.swiperpage__rating__boxstar {
+  width: 22rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.swiperpage__rating__star {
+  width: 2rem;
+  height: 2rem;
+  -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+          clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  margin-right: 0.7rem;
+  padding: 0.5rem;
+  background: #6b6b6b;
+  cursor: pointer;
+}
+.swiperpage__rating__star:hover {
+  scale: 110%;
+  background: #d3ac00;
+}
+.swiperpage__rating__star:active {
+  background: red;
+  scale: 90%;
+}
+.swiperpage__picbox {
+  height: 95%;
+  width: 95%;
 }
 @media (max-width: 720px) {
   .swiperpage__picbox {
-    width: 100%;
+    width: 95%;
     height: auto;
   }
 }
@@ -895,6 +945,10 @@ button {
     height: none;
     align-items: center;
   }
+}
+
+.yellow {
+  background: #d3ac00;
 }
 
 .articles {
@@ -1160,6 +1214,12 @@ button {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 300;
   font-style: normal;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .about {
@@ -1630,6 +1690,12 @@ button {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 300;
   font-style: normal;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .bigpic {

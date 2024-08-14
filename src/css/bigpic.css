@@ -192,6 +192,12 @@ button {
   font-style: normal;
 }
 
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .bigpic {
   width: calc(100% - 0rem);
   height: calc(100vh - 5rem);
